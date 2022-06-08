@@ -1,0 +1,30 @@
+.trendItem__category{
+  font-size: 0.8rem;
+  color: grey;
+  margin-bottom: 0.4rem;
+}
+
+.trendItem__hashtag{
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.trendItem__tweets{
+  font-size: 0.8rem;
+  color: grey;
+}
+
+.trendItem{
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.trendItem:last-child{
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.trendItem:hover{
+  background-color: rgba(182, 182, 182, 0.13);
+  transition: background-color 0.15s ease-in;
+}
