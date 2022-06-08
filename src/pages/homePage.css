@@ -1,0 +1,10 @@
+.home{
+  border-right: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  width: 50%;
+  height: fit-content;
+}
+
+.home__title{
+  padding: 1rem 0 0 1rem;
+}

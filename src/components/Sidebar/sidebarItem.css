@@ -1,0 +1,25 @@
+.sidebar__item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  cursor: pointer;
+  border-radius: 40px;
+  font-size: 1.3rem;
+  padding: 0.5rem 2rem 0.5rem 0.8rem;
+  width: fit-content;
+  transition: background-color 0.15s ease-in;
+  font-weight: lighter;
+}
+
+.sidebar__item:hover{
+  background-color: rgba(214, 214, 214, 0.13);
+}
+
+.sidebar__item:nth-child(9){
+  margin-bottom: 1.5rem;
+}
+
+.icon{
+  font-size: 2rem !important;
+}
