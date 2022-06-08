@@ -43,8 +43,6 @@ function Tweet() {
         </div>
       </div>
       <div className="tweet__bottom">
-        {/* <p>{tweetCaption}</p>
-        <p>{tweetImg}</p> */}
         <div className="tweet__bottom-left">
           <div className="tweet__item">
             <div className="tweet__icon">

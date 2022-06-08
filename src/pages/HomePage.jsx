@@ -13,8 +13,6 @@ function HomePage() {
     console.log("add to store");
     setAllTweets(JSON.parse(localStorage.getItem("allTweets")));
   }
-  // console.log(allTweets);
-  // let arr = ["apple", "banana", "mango"]
 
   useEffect(() => {
     window.addEventListener("storage", getFromStorage);
