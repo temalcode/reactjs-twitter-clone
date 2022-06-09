@@ -12,11 +12,12 @@ function Tweet() {
 
   const [tweetCaption, setTweetCaption] = useState("");
   const [tweetImg, setTweetImg] = useState("");
-  const [tweets, setTweets] = useState([{caption: 'Twitter clone react', image: './assets/alexander-shatov-SXfwXS0jWNg-unsplash.jpg'}, {caption: 'Another post here', image: './assets/alexander-shatov-k1xf2D7jWUs-unsplash.jpg'}]);
-  
-  useEffect(() => {
-    localStorage.setItem("allTweets", JSON.stringify(tweets));
-  }, [tweets])
+  const [tweets, setTweets] = useState();
+
+
+  // useEffect(() => {
+  //   localStorage.setItem("allTweets", JSON.stringify(tweets));
+  // }, [tweets])
 
   return (
     <div className="tweet__wrapper">
@@ -73,7 +74,7 @@ function Tweet() {
         <div className="tweet__bottom-left">
           <Button
             type="submit"
-            onClick={() => setTweets([...tweets, { caption: tweetCaption, image: tweetImg }])}
+            // onClick={() => setTweets([...tweets, { caption: tweetCaption, image: tweetImg }])}
             className="tweet__button"
           >
             Tweet
