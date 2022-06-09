@@ -6,21 +6,21 @@ import "./homePage.css";
 function HomePage() {
 
   const [allTweets, setAllTweets] = useState(
-    JSON.parse(localStorage.getItem("allTweets"))
+    [{caption: 'Twitter clone react', image: './assets/alexander-shatov-SXfwXS0jWNg-unsplash.jpg'}, {caption: 'Another post here', image: './assets/alexander-shatov-k1xf2D7jWUs-unsplash.jpg'}]
   );
 
-  function getFromStorage() {
-    console.log("add to store");
-    setAllTweets(JSON.parse(localStorage.getItem("allTweets")));
-  }
+  // function getFromStorage() {
+  //   console.log("add to store");
+  //   setAllTweets(JSON.parse(localStorage.getItem("allTweets")));
+  // }
 
-  useEffect(() => {
-    window.addEventListener("storage", getFromStorage);
+  // useEffect(() => {
+  //   window.addEventListener("storage", getFromStorage);
 
-    return () => {
-      window.removeEventListener("storage", getFromStorage);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("storage", getFromStorage);
+  //   };
+  // }, []);
 
   return (
     <div className="home">
